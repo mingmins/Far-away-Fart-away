@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>메탄가스 방귀 </title>
+    <style type="text/css">
+        @import url('https://fastly.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css');
+
+        html { font-family: Galmuri9, sans-serif; }
+
+        body, h3, h4, h7 {
+            margin: 0;
+            padding: 0;
+            background: white;
+            word-break: keep-all;
+            overflow: auto;}
+
+        nav {
+            position: fixed;
+            z-index: 1;
+            width: 100vw;}
+
+        nav ul { display: flex;
+            width: 620px;
+            padding: 0;
+            margin: 0;
+            background: linear-gradient(to bottom, rgba(0,0,0,0), #00FF1A);
+            justify-content: center;
+            align-items: center;
+            margin: auto;}
+
+        nav ul li {width: 50%;
+            list-style-type: none;}
+
+        nav ul li a {text-align: center;
+            padding: 12px 24px;
+            display: block;
+            text-decoration: none;
+            color: white;}
+
+        nav ul li a:hover { background: linear-gradient(to bottom, rgba(0,0,0,0), #FF6B00);
+            color: white;}
+
+        h1 { color: #FF6B00;
+            font-size: 4rem;
+            font-weight: 700px;
+            text-align: center;
+            padding-top: 50px;
+            line-height: 1.2;
+            margin: 0;
+            text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000;
+            padding-bottom: 15px;}
+
+        h2 { color: #FF6B00;
+            font-size: 4rem;
+            font-weight: 700px;
+            text-align: center;
+            padding-top: 300px;
+            line-height: 1.2;
+            margin: 0;
+            text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000;
+            padding-bottom: 15px;}
+
+       
+
+		
+		p{
+            color: #000B2B;
+            font-size: 1.4rem;
+            font-weight: 900px;
+            text-align: left;
+            line-height: 1.9;
+            margin: auto;
+            line-height: 1.6;
+            margin-left: 1%;
+            width: 500; }
+
+        p2 {
+            color: black;
+            font-size: 1.2rem;
+            font-weight: 800px;
+            text-align: left;
+            padding-top: 100%;
+            line-height: 1.6;
+            margin: auto;
+            line-height: 1.5;
+            margin-left: 30%;
+            width: 500;
+        }
+
+        .main {
+            background-attachment: fixed;
+            position: relative; }
+
+        .main img {
+            width: 100%;
+            padding-top: px;}
+
+
+         .slide-in {
+            animation: slideInRight 0.6s forwards;
+        }
+
+        @keyframes slideInRight {
+            0% {
+                opacity: 0;
+                transform: translateX(-100%);}
+            100% {opacity: 1;
+                transform: translateX(0);}}
+
+
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Two equal columns */
+            gap: 0px; /* Space between columns */
+            width: 100%; /* Adjust the container width as needed */
+            max-width: 1800px;
+            margin: auto; }
+
+        .grid-item video {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0;}
+
+        .grid-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0; padding-top: 300px}
+
+        .text-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background-color: white;
+            /*border: 1px solid #ddd;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);*/}
+
+        .text-content h1, .text-content p {
+            margin: 0;}
+
+        .text-content p {
+            margin: 0;
+            font-size: 1.4rem;
+            font-weight: 800px;
+            text-align: left;
+            line-height: 1.6;
+            padding-left: 10px;}
+
+         .metancow {
+            width: 100%;
+            height: 100vh; 
+            position: relative;}
+
+        .metancow img {
+            width: 100%; height: 100%;
+            object-fit: cover; display: block; padding-top: 100px;}
+
+
+
+         .wrap1{width: 300px; height: 300px; rgba(0, 0, 0, 0); position: absolute;
+			left:50vw;top:50vh;
+			transform: translate(-50%, -50%);
+			perspective: 400px}
+			
+	#sun{width: 500px; height: 500px; background: white;
+		position: absolute; bottom: 0; left: calc(50% - 100px);
+				transform: rotateX(90deg) rotateZ(0deg);
+				clip-path: polygon( 50% 0%,60% 30%,90% 40%,70% 60%,
+        80% 90%,50% 75%,20% 90%,30% 60%, 10% 40%,40% 30%
+    );animation: ro 3s linear infinite;}
+
+
+	@keyframes ro{
+	to{position: absolute; bottom: 0; right: 0%;
+				transform: rotateX(90deg) rotateZ(360deg);}}
+
+
+    .spin1{background: #000B2B; padding-top: 0px; padding-left: 50px;padding-right:50px }
+	
+
+.cow1{width: 100%}
+.cow2{width: 100%}
+.cow3{width: 100%}
+
+ .scroll-box {
+            width: 600px;
+            height: 235px;
+            overflow: auto; /* 스크롤을 표시할 것을 지정합니다. */
+            border: 1px solid #ccc; /* 박스에 테두리를 추가합니다. */
+            padding: 30px; /* 내부 여백을 지정합니다. */
+            background: linear-gradient(to bottom, #0EC6FF, #000B2B)}
+
+ .scroll-box2 {
+            width: 600px;
+            height: 235px;
+            overflow: auto; /* 스크롤을 표시할 것을 지정합니다. */
+            border: 1px solid #ccc; /* 박스에 테두리를 추가합니다. */
+            padding: 30px; /* 내부 여백을 지정합니다. */
+            background: linear-gradient(to bottom, #FA01FB, #000B2B)}
+
+.scroll-box3 {
+            width: 600px;
+            height: 235px;
+            overflow: auto; /* 스크롤을 표시할 것을 지정합니다. */
+            border: 1px solid #ccc; /* 박스에 테두리를 추가합니다. */
+            padding: 30px; /* 내부 여백을 지정합니다. */
+            background: linear-gradient(to bottom, #0EC6FF, #000B2B)}
+
+
+
+
+ .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* 두 개의 컬럼을 가진 그리드를 생성합니다. */
+        gap: 0px; /* 아이템 사이의 간격을 설정합니다. */
+        padding: 0px; /* 그리드 컨테이너 주변의 안쪽 여백을 설정합니다. */
+    }
+    .left-content {
+        background-color: #000B2B;
+        padding: 0px; padding-bottom: 100px;padding-top: 15px
+    }
+    .right-content {
+        background-color: #000B2B;
+        padding: 0px;padding-bottom: 100px; padding-top: 15px}
+
+
+ .cow1-1{height: 500px;animation: slideInRight 8s forwards linear infinite;
+        }
+
+        @keyframes slideInRight {
+            0% {opacity: 0;
+                transform: translateX(-100%);}
+            100% {opacity: 1;
+                transform: translateX(0);}}
+
+
+@keyframes blink {0%, 100% {opacity: 1;} 50% {opacity: 0.2;}}
+
+ .background-container {
+        position: relative;
+        width: 100%;
+        height: 600px;
+        background-image: url('final.png');
+        background-size: cover;
+        background-position: center;animation: blink 0.8s infinite;}
+
+    .overlay-image {
+        position: absolute;
+        bottom: -25%; 
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 50%; opacity: }
+
+.overlay-text {
+        position: absolute;
+        bottom: -1%; /* 수직으로 중앙에 배치 */
+        left: 50%; /* 수평으로 중앙에 배치 */
+        transform: translate(-50%, -50%); /* 중앙 정렬을 위해 위치 조정 */
+        color: #00FF1A; /* 텍스트 색상 설정 */
+        font-size: 24px; /* 텍스트 크기 설정 */
+        text-align: center;}
+
+
+
+.not-final{background:#000B2B; padding-bottom: 100px; padding-top: 50px}
+p3{color: white;font-size: 1rem;
+            text-align: center;
+            padding-top: 300px;
+            line-height: 1.2;
+            margin: 0;
+            padding-bottom: 100px;padding-left: 145px}
+
+    </style>
+</head>
+<body>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="index.html">Fart! away!</a></li>
+                <li><a href="page1.html">메탄가스</a></li>
+                <li><a href="page2.html">메탄가스 방귀</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <section>
+        <div class="main">
+            <img src="page2main.png" alt="Main Image" class="slide-in">
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="grid-item">
+                <video src="eat.mp4" autoplay muted controls></video>
+            </div>
+            <div class="text-content">
+                <h1>소가 뀌는 <br>{메탄가스 방귀}</h1>
+                <p>소는 소화 과정에서 한번 삼킨 먹이를 되새김질해 다시 먹는다. 이때 장 속의 미생물이 먹이를 분해하는 과정에서 가스를 생성하고 
+트림과 방귀를 통해 배출하는데, 이 가스의 주요 성분이 메탄이다.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="metancow">
+            <img src="metancow.png" alt="sub Image">
+        </div>
+    </section>
+
+     <section>
+        <div class="container">
+            <div class="grid-item">
+                <img src="replayeat.png"></img>
+            </div>
+            <div class="text-content">
+                <h2>메탄가스 방귀를 막아라!</h2>
+                <p>이렇듯 축산업은 전 세계 온실가스 배출 주요 원인 중 하나다. 
+이에 미국 바이든 행정부는 2021년 말 메탄 배출을 
+단속하겠다는 계획을 발표했고, 유럽연합을 비롯한 80여 국가 이상은 메탄 배출량을 30% 이상 줄이겠다고 선언했다.</p>
+            </div>
+        </div>
+    </section>
+
+
+<section>
+  	<div class="wrap1">
+        <div id="sun"></div>
+    </div>
+</section>
+
+
+
+
+<div class="grid-container">
+    <div class="left-content">
+        <div class="spin1">
+		
+		<img src="cow1.png" alt="sub Image" class="cow1">
+		
+		<div class="scroll-box">
+        <p>2021년 3월, 미국 데이비스 캘리포니아대 연구팀은 소의 사료에 
+해조류를 첨가해 메탄 배출량을 80% 이상 줄일 수 있다는 연구 
+결과를 내놓았다. 이 논문은 국제 학술지 <플로스원>에 게재됐다. 이후 스타트업 심브로시아와 스위스의 스타트업 볼타 그린텍 등이 소의 사료에 첨가하는 해초 첨가제 등을 개발하고 상용화하기 위해 생산 공장을 건설하는 등 실행 단계에 있다.
+
+최근 우리나라에서도 친환경 사료를 도입해 메탄 방출량을 줄이는 노력을 시도하고 있다. 연구진은 2030년까지 제주도에서 저 메탄 사료를 통해 온실가스 생산량을 10% 낮추는 시범사업을 추진한 뒤, 점차 전국으로 확대할 계획이다.</p>
+    	</div>
+    </div>
+   
+    </div>
+    <div class="right-content">
+        <img src="eating noodle.png" alt="sub Image" class="cow1-1">
+       </div>
+</div>
+
+<div class="grid-container">
+    <div class="left-content">
+        <div class="spin1">
+        
+        <img src="cow2.png" alt="sub Image" class="cow2">
+        
+        <div class="scroll-box2">
+        <p>낙농가들은 메탄을 적게 배출하거나 또는 배출되는 메탄의 단위당 가장 영양가가 높은 우유를 생산하기 위해 ‘선택적 사육’도 시행하고 있다. 이는 매 세대에 걸쳐 메탄 배출량을 기하급수적으로 줄일 수 있을 것으로 전망되는 방법이다.
+
+간단하게 요약하자면 앞으로 메탄가스 방귀를 적게 뀌는 매너 소들만 살아남을 수 있을 것이다.
+이때 생각해 볼 포인트, 방귀를 참았다가 한 번에 뀌는 소는 어떻게 되는 걸까..?!</p>
+        </div>
+    </div>
+   
+    </div>
+    <div class="right-content">
+        <img src="dontfart.png" alt="sub Image" class="cow1-1">
+       </div>
+</div>
+
+<div class="grid-container">
+    <div class="left-content">
+        <div class="spin1">
+        
+        <img src="cow3.png" alt="sub Image" class="cow3">
+        
+        <div class="scroll-box3">
+        <p>소는 건초 같은 단단한 섬유질을 분해하기 위해 미생물을 사용한다. 이 과정에서 메탄이 발생한다. 소들은 대부분 코를 통해 메탄을 배출하고 나머지 95%는 트림으로 나온다. 젤프의 공동 설립자 프란시스코 노리스(Francisco Norris)는 바로 이 점에 착안했다. 소에게 마스크를 씌워 메탄을 흡수하는 것이다.  젤프의 웨어러블 기기는 소의 목에 거는 마스크 형태로 이루어져 있다. 이 기기는 고무와 같은 플라스틱으로 만들어지며, 무게는 100 g 미만인 것으로 알려졌다. 이 마스크는 소의 콧구멍 바로 위에 놓이는 구조로 디자인되어 있으며 태양광 충전 배터리로 구동된다. 소의 트림을 빨아들이고 메탄 흡수 필터를 통해 장치에 가둔 뒤 가스를 산화시켜 이산화탄소와 수증기로 바꿔 배출하는 형태다. 노리스는 이 기술이 목초지에서 풀을 뜯고 첨가물이 함유된 사료를 먹지 않는 소들에게 특히 적합하다고 언급했다.  현재 젤프는 이 마스크를 통해 소의 일일 메탄 배출량을 약 3분의 1까지 줄일 수 있을 것으로 보고 있다.</p>
+        </div>
+    </div>
+   
+        </div>
+        <div class="right-content">
+            <img src="mask.png" alt="sub Image" class="cow1-1">
+       </div>
+</div>
+
+
+<section>
+    <div class="not-final">
+        <p3>소들이 메탄가스 방귀를 덜 뀌기 위해 노력하고 있다. 그럼 우리는 메탄가스를 줄이기 위해 어떤 노력을 해야할까? 다음엔 인간들이 해야할 것들을 알려주겠다!
+           </p3>
+        
+    </div>
+
+</section>
+
+
+<section>
+    <div class="background-container">
+        <img src="footer.png" alt="Overlay Image" class="overlay-image">
+         <div class="overlay-text">
+        <h2>Far away! <br>Fart! away!</h2> 
+        &copy;2024 김민경 모든 권리보유.<br> minsminskim018@gmail.com<br>
+        <a href="https://www.instagram.com/m.mmings/" target="_blank">
+        <button> archives<br>@m.mmings</button>
+    </a>
+        </div>
+    </footer>
+        </div>
+    </div>
+
+</section>
+
+
+</body>
+</html>

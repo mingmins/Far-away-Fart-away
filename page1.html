@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>메탄가스</title>
+</head>
+<body>
+<style type="text/css">
+
+@import url('https://fastly.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css');
+
+html{font-family: Galmuri9, sans-serif;}
+
+
+body, h3, h4, h7 {
+    margin: 0;
+    padding: 0;
+    background: black;
+    word-break: keep-all;
+    overflow: auto;}
+
+nav {
+    position: fixed;
+    z-index: 1;
+    width: 100vw;}
+
+nav ul {
+    display: flex;
+    width: 620px;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0), #00FF1A);
+    justify-content: center;
+    align-items: center;
+    margin: auto;}
+
+nav ul li {
+    width: 50%;
+    list-style-type: none;}
+
+nav ul li a {
+    text-align: center;
+    padding: 12px 24px;
+    display: block;
+    text-decoration: none;
+    color: white;}
+
+nav ul li a:hover {
+    background: linear-gradient(to bottom, rgba(0,0,0,0), #FF6B00);
+    color: white;}
+
+h1{color: #FF6B00; font-size: 4rem; font-weight: 700px; text-align:center;padding-top: 150px; line-height: 1.2; margin: 0;
+text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000;}
+
+
+p1 {color: black; font-size: 1.2rem; font-weight: 800px; text-align: left; padding-top: 100%; line-height: 1.6; margin: auto; line-height: 1.5; margin-left: 30%; width: 500px; }
+
+
+
+.sub{background: url(sub.png);background-size: 100%; height: 700px;  background-attachment: fixed; position: ;}
+
+
+
+
+h2 {color: #FF6B00;
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 150px; margin: 3px;
+    line-height: 1.2;
+    text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000;}
+
+
+
+
+.star{position: relative;display: inline-block;padding-bottom: 0px}
+.star img {display: block; width: 100%; height: auto;}
+
+.text-overlay { position: absolute;
+            top: 50%; left: 50%;transform: translate(-50%, -50%);
+            color: black; padding-top: 0px;
+            font-size: 1.2rem; text-align: center;}
+
+.metan{background: white; display: flex;}
+
+        .scroll-container {flex: 1;
+            display: flex;
+            overflow-x: auto;
+            height: 100%;
+            align-items: center;}
+
+        .scroll-container img { width: 100%;
+            height: auto;
+            margin-right: 0px; /* Adjust spacing between images */}
+
+        /* Hide scrollbar */
+        .scroll-container::-webkit-scrollbar {
+            display: none;}
+
+        .scroll-container {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */}
+
+  
+
+.aaaaa {width: 100%; background: black;}
+
+
+.image-container-metan {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    height: 350px;
+}
+
+.image-box-metan {
+    position: relative;
+    width: 100%;  /* Adjust width to fit within the screen */
+}
+
+.image,
+.hover-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.1s ease;}
+
+.image-box-metan:hover .hover-image {
+    opacity: 1;}
+
+.image-box-metan:hover .image {
+    opacity: 0;}
+
+
+
+.cow-image-container {width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;}
+
+.cow-image-box {width: 100%;
+    height: 100%;
+    position: relative; display: block;}
+
+.cow-image-box .image,
+.cow-image-box .hover-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;}
+
+.cow-image-box .hover-image { opacity: 0;
+    transition: opacity 0.1s ease;}
+
+.cow-image-box:hover .hover-image {opacity: 1;}
+
+.cow-image-box:hover .image {opacity: 0;}
+
+
+
+#background-video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; object-fit: cover;
+        z-index: -1; /* Ensure video is behind other content */}
+
+    .content-bg {
+        position: relative;
+        z-index: 1; /* Ensure content is in front of video */
+        color: white;
+        text-align: center;
+        padding: 100px;}
+
+
+ .clicker{text-align: center;}
+
+
+ .click {width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;}
+
+    .click {
+        position: relative;
+        cursor: pointer; }
+
+    .click img {
+        width: 30px; /* Adjust image size as needed */
+        height: auto;
+        display: block;padding-left: 30px}
+
+
+</style>
+
+<body>
+	
+
+	<section>
+
+		<nav>
+		<ul>
+			<li> <a href="index.html">Fart! away!</a> </li>
+			<li> <a href="page1.html">메탄가스</a> </li>
+			<li> <a href="page2.html">메탄가스 방귀</a> </li>
+			
+		</ul> </nav>
+		</div>
+	<section>
+
+  
+		  		</div>
+		  		<div class="star"><img src="star.png" alt="star">
+		  		<div class="text-overlay"><h2>{지금부터 메탄가스에 대해 알아보자!}</h2>
+		  		<br>"지구온난화의 주범"이라고 하면 이산화탄소가 가장 먼저 떠오르지만, 실제로 메탄이 이산화탄소보다 80배 이상 더 강력합니다.<br>메탄은 지금까지 일어난 지구 온도 상승에 약 20~30%의 책임이 있다고 알려져 있죠.</div>
+		  		</div>
+
+	</section>
+
+
+<section class="metan">
+	<div class="fixed-image"></div>
+	<div class="scroll-container">
+		<img src="gasgas.png" alt="Image1" class="image1">
+		<img src="metan trash1.png" alt="Image2">
+		<img src="metantrash2.png" alt="Image3">
+		<img src="metangastrash3.png" alt="Image4">
+		<img src="metangastrash4.png" alt="Image5">
+
+	</div>	
+</section>
+
+	
+<section>
+<div class="gr">
+	<img src="aa.png" class="aaaaa">
+</div>
+</section>
+
+
+<section>
+        <div class="image-container-metan">
+            <div class="image-box-metan">
+                <img src="1-1.png" alt="Image 1" class="image">
+                <img src="1-11.png" alt="Image 1 Hover" class="hover-image">
+            </div>
+            
+            <div class="image-box-metan">
+            	<img src="3-3.png" alt="Image 3" class="image">
+            	<img src="3-33.png" alt="Image 3 Hover" class="hover-image">
+            </div>
+		 </div>
+    </section>
+
+<section>
+        <div class="image-container-metan">
+            <div class="image-box-metan">
+                <img src="2-2.png" alt="Image 2" class="image">
+                <img src="2-22.png" alt="Image 2 Hover" class="hover-image">
+            </div>
+            
+            <div class="image-box-metan">
+            	<img src="4-4.png" alt="Image 4" class="image">
+            	<img src="4-44.png" alt="Image 4 Hover" class="hover-image">
+            </div>
+		 </div>
+    </section>
+
+<section>
+    <div class="cow-image-container">
+        <div class="cow-image-box">
+            <img src="5-5.png" alt="Image 5" class="image">
+            <img src="5-55.png" alt="Image 5 Hover" class="hover-image">
+        </div>   
+    </div>
+  
+</section>
+
+<section>
+<video autoplay loop muted id="background-video">
+    <source src="cowsk.mp4" type="video/mp4">
+   
+</video>
+</script>
+
+
+<div class="clicker">
+    <div class="Click">
+        <a href="page2.html">
+            <img src="click.png" alt="Clickable Image">
+        </a>
+    </div>
+</div>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
